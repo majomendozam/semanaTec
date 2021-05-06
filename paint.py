@@ -1,5 +1,5 @@
 """Paint, for drawing shapes.
-
+Ximena Gonzalez
 Exercises
 
 1. Add a color.
