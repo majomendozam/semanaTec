@@ -1,5 +1,5 @@
 """Paint, for drawing shapes.
-
+Ximena Gonzalez
 María José Mendoza Muñiz
 06/05/2021
 Exercises
@@ -95,10 +95,11 @@ setup(420, 420, 370, 0)
 onscreenclick(tap)
 listen()
 onkey(undo, 'u')
-onkey(lambda: color('black'), 'K')
+onkey(lambda: color('red'), 'R')
 onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
+onkey(lambda: color('black'), 'K')
 onkey(lambda: color('red'), 'R')
 onkey(lambda: color('orange'), 'O')
 onkey(lambda: color('yellow'), 'Y')

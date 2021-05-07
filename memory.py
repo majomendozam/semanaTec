@@ -69,8 +69,8 @@ def draw():
         x, y = xy(mark)
         up()
         goto(x + 2, y)
-        color('black')
-        write(tiles[mark], font=('Arial', 30, 'normal'))
+        color('red')
+        write(tiles[mark], font=('Arial', 35, 'normal'))
 
     update()
     ontimer(draw, 100)
