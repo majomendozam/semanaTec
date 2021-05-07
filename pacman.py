@@ -1,5 +1,5 @@
 """Pacman, classic arcade game.
-
+Pedro Emiliano Bravo Zapata
 Exercises
 
 1. Change the board.
