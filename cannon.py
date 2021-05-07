@@ -16,7 +16,7 @@ from freegames import vector
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
-
+tittle ('Cannon Emi')
 def tap(x, y):
     "Respond to screen tap."
     if not inside(ball):
