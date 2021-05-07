@@ -1,4 +1,5 @@
 """Snake, classic arcade game.
+Pedro Emiliano Bravo Zapata
 
 Exercises
 

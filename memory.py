@@ -1,5 +1,5 @@
 """Memory, puzzle game of number pairs.
-Ximena Gonzalez
+
 Exercises:
 
 1. Count and print how many taps occur.

@@ -1,5 +1,11 @@
 """Paint, for drawing shapes.
+<<<<<<< HEAD
 Ximena Gonzalez
+=======
+
+María José Mendoza Muñiz
+06/05/2021
+>>>>>>> 9dcd65e170e8bb4876c4720a494c1e25cbde4aa1
 Exercises
 
 1. Add a color.
@@ -12,6 +18,11 @@ Exercises
 
 from turtle import *
 from freegames import vector
+
+
+pensize(8)
+fillcolor("yellow")
+pencolor("green")
 
 def line(start, end):
     "Draw line from start to end."
@@ -92,7 +103,12 @@ onkey(lambda: color('red'), 'K')
 onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
+<<<<<<< HEAD
 onkey(lambda: color('black'), 'R')
+=======
+onkey(lambda: color('red'), 'R')
+onkey(lambda: color('orange'), 'O')
+>>>>>>> 9dcd65e170e8bb4876c4720a494c1e25cbde4aa1
 onkey(lambda: color('yellow'), 'Y')
 onkey(lambda: color('cyan'), 'C')
 onkey(lambda: color('orange'), 'O')
