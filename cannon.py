@@ -14,9 +14,12 @@ from random import randrange
 from turtle import *
 from freegames import vector
 
+title('Cannon Game')
+
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
+count = 0
 
 def tap(x, y):
     "Respond to screen tap."
@@ -36,7 +39,7 @@ def draw():
 
     for target in targets:
         goto(target.x, target.y)
-        dot(20, 'blue')
+        dot(25, 'yellow')
 
     if inside(ball):
         goto(ball.x, ball.y)
@@ -47,6 +50,7 @@ def draw():
 def move():
     "Move ball and targets."
     # Generate a new target at random times
+    global count
     if randrange(40) == 0:
         y = randrange(-150, 150)
         target = vector(200, y)
@@ -69,8 +73,12 @@ def move():
     for target in dupe:
         if abs(target - ball) > 13:
             targets.append(target)
+        else: count+=1
+
+	   
 
     draw()
+
 
     # Detect when a target reaches the left side
     for target in targets:
@@ -80,10 +88,15 @@ def move():
 
     ontimer(move, 50)
 
+
 setup(420, 420, 370, 0)
 hideturtle()
 up()
 tracer(False)
 onscreenclick(tap)
 move()
+listen()
+style = ('Arial', 30, 'bold')
+onkey(lambda: write('SCORE: ', font = style, align = 'right'), 'w')
+onkey(lambda: write(count, font = style, align = 'left'), 'e')
 done()
