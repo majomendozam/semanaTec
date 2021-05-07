@@ -1,10 +1,7 @@
 """Paint, for drawing shapes.
-<<<<<<< HEAD
 
-=======
 María José Mendoza Muñiz
 06/05/2021
->>>>>>> María-José
 Exercises
 
 1. Add a color.
@@ -18,14 +15,11 @@ Exercises
 from turtle import *
 from freegames import vector
 
-<<<<<<< HEAD
-=======
 
 pensize(8)
 fillcolor("yellow")
 pencolor("green")
 
->>>>>>> María-José
 def line(start, end):
     "Draw line from start to end."
     up()
@@ -106,10 +100,7 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
-<<<<<<< HEAD
-=======
 onkey(lambda: color('orange'), 'O')
->>>>>>> María-José
 onkey(lambda: color('yellow'), 'Y')
 onkey(lambda: color('cyan'), 'C')
 onkey(lambda: color('orange'), 'O')
