@@ -14,6 +14,11 @@ Exercises
 from turtle import *
 from freegames import vector
 
+
+pensize(8)
+fillcolor("yellow")
+pencolor("green")
+
 def line(start, end):
     "Draw line from start to end."
     up()
