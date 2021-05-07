@@ -1,5 +1,6 @@
 """Cannon, hitting targets with projectiles.
-
+María José Mendoza Muñiz
+06/05/2021
 Exercises
 
 1. Keep score by counting target hits.
