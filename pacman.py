@@ -1,5 +1,9 @@
 """Pacman, classic arcade game.
+<<<<<<< HEAD
 Pedro Emiliano Bravo Zapata
+=======
+
+>>>>>>> María-José
 Exercises
 
 1. Change the board.
@@ -85,7 +89,11 @@ def valid(point):
 def world():
     "Draw world using path."
     bgcolor('black')
+<<<<<<< HEAD
     path.color('green')
+=======
+    path.color('blue')
+>>>>>>> María-José
 
     for index in range(len(tiles)):
         tile = tiles[index]

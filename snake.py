@@ -1,5 +1,6 @@
 """Snake, classic arcade game.
 Pedro Emiliano Bravo Zapata
+
 Exercises
 
 1. How do you make the snake faster or slower?
@@ -32,7 +33,7 @@ def move():
     head.move(aim)
 
     if not inside(head) or head in snake:
-        square(head.x, head.y, 9, 'blue')
+        square(head.x, head.y, 9, 'red')
         update()
         return
 

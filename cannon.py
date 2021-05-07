@@ -1,5 +1,10 @@
 """Cannon, hitting targets with projectiles.
+<<<<<<< HEAD
 
+=======
+María José Mendoza Muñiz
+06/05/2021
+>>>>>>> María-José
 Exercises
 
 1. Keep score by counting target hits.
@@ -13,17 +18,32 @@ from random import randrange
 from turtle import *
 from freegames import vector
 
+<<<<<<< HEAD
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
 tittle ('Cannon Emi')
+=======
+title('Cannon Game')
+
+ball = vector(-200, -200)
+speed = vector(0, 0)
+targets = []
+count = 0
+
+>>>>>>> María-José
 def tap(x, y):
     "Respond to screen tap."
     if not inside(ball):
         ball.x = -199
         ball.y = -199
+<<<<<<< HEAD
         speed.x = (x + 200) / 25
         speed.y = (y + 200) / 25
+=======
+        speed.x = (x + 500) / 25
+        speed.y = (y + 500) / 25
+>>>>>>> María-José
 
 def inside(xy):
     "Return True if xy within screen."
@@ -35,7 +55,11 @@ def draw():
 
     for target in targets:
         goto(target.x, target.y)
+<<<<<<< HEAD
         dot(50, 'blue')
+=======
+        dot(25, 'yellow')
+>>>>>>> María-José
 
     if inside(ball):
         goto(ball.x, ball.y)
@@ -46,6 +70,10 @@ def draw():
 def move():
     "Move ball and targets."
     # Generate a new target at random times
+<<<<<<< HEAD
+=======
+    global count
+>>>>>>> María-José
     if randrange(40) == 0:
         y = randrange(-150, 150)
         target = vector(200, y)
@@ -53,11 +81,19 @@ def move():
 
     # Move the existing targets
     for target in targets:
+<<<<<<< HEAD
         target.x -= 0.9
 
     # Move the cannon shot
     if inside(ball):
         speed.y -= 0.35
+=======
+        target.x -= 0.90
+
+    # Move the cannon shot
+    if inside(ball):
+        speed.y -= 0.40
+>>>>>>> María-José
         ball.move(speed)
 
     # Make a copy of the existing target list before redrawing
@@ -68,9 +104,19 @@ def move():
     for target in dupe:
         if abs(target - ball) > 13:
             targets.append(target)
+<<<<<<< HEAD
 
     draw()
 
+=======
+        else: count+=1
+
+	   
+
+    draw()
+
+
+>>>>>>> María-José
     # Detect when a target reaches the left side
     for target in targets:
         if not inside(target):
@@ -79,10 +125,21 @@ def move():
 
     ontimer(move, 50)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> María-José
 setup(420, 420, 370, 0)
 hideturtle()
 up()
 tracer(False)
 onscreenclick(tap)
 move()
+<<<<<<< HEAD
+=======
+listen()
+style = ('Arial', 30, 'bold')
+onkey(lambda: write('SCORE: ', font = style, align = 'right'), 'w')
+onkey(lambda: write(count, font = style, align = 'left'), 'e')
+>>>>>>> María-José
 done()
